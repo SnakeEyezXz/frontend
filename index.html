@@ -1,10 +1,101 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>	Yo</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
+	<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta http-equiv="cleartype" content="on"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/jquery.formstyler.css" rel="stylesheet" />
+	<link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<title>ТехноПаркМаяк-HotSpotWiFi</title>
 </head>
 <body>
-	<h1>Hello world!</h1>
+	<div class="wrapper">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-9">
+						<div class="transparentBg">
+							<h1 class="text-center my-4 fs-40 text-uppercase display-4 MyTextShadowz">Технопарк "Маяк"</h1>
+							<img src="img/logo.png" class="logo mx-auto" alt="ТехноПаркHotSpot">
+							<div class="w-100 my-3 fs-20 text-center text-uppercase font-weight-bold text-white MyTextShadowz">для доступа в интернет <br> пройдите авторизацию!</div>
+							<div class="row justify-content-center">
+								<div class="col-sm-9 col-md-7 col-lg-6 inputWrapper">
+									<div id="autorizeGroup" class="input-group my-4 inputBoxShadow">
+										<div class="input-group-prepend">
+											<select id="exampleFormControlSelect1">
+												<option>RU  +7</option>
+												<option>UA  +38</option>
+												<option>BY  +375</option>
+											</select>
+										</div>
+										<input type="text" class="form-control text-center" placeholder="Введите номер телефона">
+									</div>
+									<button id="autorizeMe" class="btn btn btn-success mb-4 text-uppercase inputBoxShadow" type="submit">Авторизация</button>
+									<button id="getCall" class="btn btn btn-info mt-3 text-uppercase inputBoxShadow" type="submit"><a href="tel:79781176968" >CALL ME BABY!</a></button>
+									<button id="getSms" class="btn btn btn-success mt-3 text-uppercase inputBoxShadow" type="submit">Получить код по SMS</button>
+									<input id="InputCode" type="text" class="form-control text-center mx-auto" placeholder="Введите код">
+									<button id="SuccessCode" class="btn btn btn-success w-75 mx-auto mt-3 text-uppercase inputBoxShadow" type="submit">Получить доступ</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+				</div>
+				<div class="col">
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+				</div>
+				<div class="col">
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+					<a href="" class="d-block">links</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+</div>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/core.js"></script>
+<script type="text/javascript">
+		(function($) {
+			$(function() {
+			$('select').styler();
+			});
+		})(jQuery);
+</script>
+<!-- Livereload -->
+<script>
+	//document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
