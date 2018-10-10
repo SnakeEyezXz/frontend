@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -12,6 +12,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/open-iconic-bootstrap.min.css" rel="stylesheet">
 	<link href="css/jquery.formstyler.css" rel="stylesheet" />
 	<link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/animate.css">
@@ -42,7 +43,7 @@
 										<input type="text" class="form-control text-center" placeholder="Введите номер телефона">
 									</div>
 									<button id="autorizeMe" class="btn btn btn-success mb-4 text-uppercase inputBoxShadow" type="submit">Авторизация</button>
-									<button id="getCall" class="btn btn btn-info mt-3 text-uppercase inputBoxShadow" type="submit"><a href="tel:79781176968" >CALL ME BABY!</a></button>
+									<button id="getCall" class="btn btn btn-info mt-3 text-uppercase inputBoxShadow" type="submit"><a href="tel:79781176968" ><span class="icon-phone"></span>CALL ME BABY</a></button>
 									<button id="getSms" class="btn btn btn-success mt-3 text-uppercase inputBoxShadow" type="submit">Получить код по SMS</button>
 									<input id="InputCode" type="text" class="form-control text-center mx-auto" placeholder="Введите код">
 									<button id="SuccessCode" class="btn btn btn-success w-75 mx-auto mt-3 text-uppercase inputBoxShadow" type="submit">Получить доступ</button>
@@ -94,8 +95,5 @@
 			});
 		})(jQuery);
 </script>
-<!-- Livereload -->
-<script>
-	//document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
